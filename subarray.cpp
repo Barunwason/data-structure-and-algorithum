@@ -7,19 +7,14 @@ int main(){
     cout<<"enter the number";
     cin>>s;
     for(int i=0;i<6;i++){
+        sum=0;
         for(int j=i;j<6;j++){
-         
+            sum+=a[j];
             if(sum==s){
-                cout<<i<<j-1<<endl;
-                for(int l=i;l<j;l++){
-                    cout<<a[l];
+                cout<<"index of that subarray="<<i<<" "<<j-1<<endl;
+                for(int l=i;l<j+1;l++){
+                    cout<<a[l]<<endl;
                 }
-            }
-            sum=0;
-            
-            for(int k=i;k<j+1;k++){
-                sum+=a[k];
-                
             }
         }
     }
