@@ -1,3 +1,4 @@
+/*find the subarray whose sum is given(brute force approach)*/
 #include <iostream>
 using namespace std;
 
